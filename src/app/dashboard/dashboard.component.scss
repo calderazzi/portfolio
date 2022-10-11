@@ -1,0 +1,209 @@
+.grid-container {
+  margin: 20px;
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+.dashboard-card-content {
+  text-align: center;
+}
+
+mat-card-title {
+  font-size: 40px;
+}
+.mat-card {
+  background-color: rgb(96, 95, 95);
+  color: white;
+  border-radius: 15px;
+}
+
+.subTitulo {
+  font-size: 30px;
+  text-decoration: underline;
+}
+.sobreMi {
+  font-size: 25px;
+  text-align: justify;
+  line-height: 40px;
+}
+
+.html {
+  width: 150px;
+  position: absolute;
+  animation: entra1 2s;
+  left: 1vw;
+  margin-top: 1%;
+}
+@keyframes entra1 {
+  0% {
+    left: -50vw;
+  }
+  50% {
+    left: -10vw;
+  }
+  100% {
+    left: 1vw;
+  }
+}
+.css {
+  width: 150px;
+  position: absolute;
+  animation: entra2 5s;
+  left: 15vw;
+  margin-top: 1%;
+}
+@keyframes entra2 {
+  0% {
+    left: -50vw;
+  }
+  50% {
+    left: -10vw;
+  }
+  100% {
+    left: 15vw;
+  }
+}
+
+.js {
+  width: 150px;
+  position: absolute;
+  animation: entra3 10s;
+  left: 30vw;
+  margin-top: 1%;
+}
+@keyframes entra3 {
+  0% {
+    left: -70vw;
+  }
+  50% {
+    left: -20vw;
+  }
+  100% {
+    left: 30vw;
+  }
+}
+
+.angular {
+  width: 150px;
+  position: absolute;
+  animation: entra4 17s;
+  left: 48vw;
+  margin-top: 1%;
+}
+@keyframes entra4 {
+  0% {
+    left: -50vw;
+  }
+  50% {
+    left: -20vw;
+  }
+  100% {
+    left: 48vw;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .subTitulo {
+    font-size: 25px;
+    margin-bottom: -10px;
+  }
+  .sobreMi {
+    font-size: 20px;
+    line-height: 35px;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .grid-container {
+    margin: 0;
+  }
+  .subTitulo {
+    font-size: 20px;
+  }
+  .sobreMi {
+    line-height: 25px;
+  }
+
+  .html, .css, .js, .angular {
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .sobreMi {
+    line-height: 22px;
+    font-size: 16px;
+  }
+  .html {
+    animation: entrar1 2s;
+    left: 10vw;
+    margin-top: 1%;
+  }
+  @keyframes entrar1 {
+    0% {
+      left: -50vw;
+    }
+    50% {
+      left: -10vw;
+    }
+    100% {
+      left: 10vw;
+    }
+  }
+  .css {
+    animation: entrar2 5s;
+    left: 45vw;
+    margin-top: 1%;
+  }
+  @keyframes entrar2 {
+    0% {
+      left: -50vw;
+    }
+    50% {
+      left: -20vw;
+    }
+    100% {
+      left: 45vw;
+    }
+  }
+  
+  .js {
+    animation: entrar3 12s;
+    left: 10vw;
+    margin-top: 35%;
+  }
+  @keyframes entrar3 {
+    0% {
+      left: -70vw;
+    }
+    50% {
+      left: -30vw;
+    }
+    100% {
+      left: 10vw;
+    }
+  }
+  
+  .angular {
+    animation: entrar4 17s;
+    left: 45vw;
+    margin-top: 35%;
+  }
+  @keyframes entrar4 {
+    0% {
+      left: -70vw;
+    }
+    50% {
+      left: -30vw;
+    }
+    100% {
+      left: 45vw;
+    }
+  }
+}

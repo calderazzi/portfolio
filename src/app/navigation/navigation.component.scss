@@ -1,0 +1,76 @@
+.sidenav-container {
+  height: 100%;
+  background-color: rgb(226, 224, 224);
+}
+
+.sidenav {
+  width: 150px;
+  background-color: rgb(209, 209, 209);
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+  background-color: rgb(149, 149, 149);
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 100px;
+}
+
+.list {
+  font-size: 17px;
+  font-weight: bolder;
+  margin-top: 20px;
+}
+.list:hover {
+  background-color: rgb(155, 153, 153);
+}
+
+.yo {
+  border-radius: 50%;
+  width: 100px;
+  border: 2px solid white;
+}
+.titulo {
+  width: 100%;
+}
+
+h1 {
+  margin-top: -30px;
+  font-size: 35px;
+}
+
+h2 {
+  position: absolute;
+  animation: aparece 3s;
+  left: 48%;
+  top: 50%;
+}
+@keyframes aparece {
+  0% {
+    top: -50%;
+  }
+  50% {
+    top: -10%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .yo {
+    width: 60px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  
+  h2 {
+    left: 45%;
+    font-size: 15px;
+  }
+}

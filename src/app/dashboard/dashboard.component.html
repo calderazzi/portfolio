@@ -1,0 +1,20 @@
+<div class="grid-container">
+  <mat-grid-list cols="2" rowHeight="400px">
+    <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <h3 class="subTitulo">Sobre mi:</h3><br>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div class="sobreMi">Tengo conocimientos en HTML, CSS, GIT, JAVASCRIPT y ANGULAR. Ingles intermedio. Estoy interesado en trabajar en algún área de tecnología en donde pueda aplicar mis conocimientos mientras sigo estiudiando y perfeccionandome, también si la empresa tiene capacitaciones estoy dispuesto a tomarlas para mejorar mis habilidades y poder brindar las soluciones a los problemas. Soy autodidacta y me gustan los desafios y si no encuentro la solución a un problema, busco por todos los medios la solución. Me gusta ayudar a mis compañeros cuando no logran comprender algún código y estoy listo para aportar mis conocimientos al grupo de trabajo del que participe. Actualmente estoy estudiando programación orientada a objetos en el centro de educación técnico profesional de Catamarca (C++ y python).</div>
+          <img src="./assets/img/html.png" alt="logo html" class="html">
+          <img src="./assets/img/css.png" alt="logo html" class="css">
+          <img src="./assets/img/js.jpg" alt="logo html" class="js">
+          <img src="./assets/img/angular.png" alt="logo html" class="angular">
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
