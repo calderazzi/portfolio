@@ -13,12 +13,12 @@ export class DashboardComponent {
     map(({ matches }) => {
       if (matches) {
         return [
-          { title: 'Card 1', cols: 2, rows: 2 },
+          { title: 'Card 1', cols: 2, rows: 3.5 },
         ];
       }
 
       return [
-        { title: 'Card 1', cols: 2, rows: 2 },
+        { title: 'Card 1', cols: 2, rows: 3 },
 
       ];
     })

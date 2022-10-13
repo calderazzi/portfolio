@@ -19,6 +19,7 @@ import { CertificadoComponent } from './navigation/certificado/certificado.compo
 import { HomeComponent } from './navigation/home/home.component';
 import { ProyectosComponent } from './navigation/proyectos/proyectos.component';
 import { ContactoComponent } from './navigation/contacto/contacto.component';
+import { SobreMiComponent } from './navigation/sobre-mi/sobre-mi.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ContactoComponent } from './navigation/contacto/contacto.component';
     CertificadoComponent,
     HomeComponent,
     ProyectosComponent,
-    ContactoComponent
+    ContactoComponent,
+    SobreMiComponent
   ],
   imports: [
     BrowserModule,

@@ -14,31 +14,23 @@
   text-align: center;
 }
 
-mat-card-title {
-  font-size: 40px;
-}
 .mat-card {
   background-color: rgb(96, 95, 95);
   color: white;
   border-radius: 15px;
 }
 
-.subTitulo {
+h3 {
   font-size: 30px;
-  text-decoration: underline;
-}
-.sobreMi {
-  font-size: 25px;
-  text-align: justify;
-  line-height: 40px;
+
 }
 
 .html {
-  width: 150px;
+  width: 160px;
   position: absolute;
   animation: entra1 2s;
-  left: 1vw;
-  margin-top: 1%;
+  top: 7%;
+  left: 8vw;
 }
 @keyframes entra1 {
   0% {
@@ -48,15 +40,15 @@ mat-card-title {
     left: -10vw;
   }
   100% {
-    left: 1vw;
+    left: 8vw;
   }
 }
 .css {
-  width: 150px;
+  width: 160px;
   position: absolute;
   animation: entra2 5s;
-  left: 15vw;
-  margin-top: 1%;
+  left: 25vw;
+  top: 7%;
 }
 @keyframes entra2 {
   0% {
@@ -66,7 +58,7 @@ mat-card-title {
     left: -10vw;
   }
   100% {
-    left: 15vw;
+    left: 25vw;
   }
 }
 
@@ -74,8 +66,9 @@ mat-card-title {
   width: 150px;
   position: absolute;
   animation: entra3 10s;
-  left: 30vw;
-  margin-top: 1%;
+  left: 42vw;
+  top: 7%;
+  border-radius: 10px;
 }
 @keyframes entra3 {
   0% {
@@ -85,7 +78,7 @@ mat-card-title {
     left: -20vw;
   }
   100% {
-    left: 30vw;
+    left: 42vw;
   }
 }
 
@@ -93,8 +86,8 @@ mat-card-title {
   width: 150px;
   position: absolute;
   animation: entra4 17s;
-  left: 48vw;
-  margin-top: 1%;
+  left: 60vw;
+  top: 7%;
 }
 @keyframes entra4 {
   0% {
@@ -104,64 +97,105 @@ mat-card-title {
     left: -20vw;
   }
   100% {
-    left: 48vw;
+    left: 60vw;
   }
 }
 
-@media only screen and (max-width: 1300px) {
-  .subTitulo {
-    font-size: 25px;
-    margin-bottom: -10px;
+.git {
+  width: 150px;
+  position: absolute;
+  animation: entra5 2s;
+  left: 8vw;
+  top: 23%;
+}
+@keyframes entra5 {
+  0% {
+    left: -70vw;
   }
-  .sobreMi {
-    font-size: 20px;
-    line-height: 35px;
+  50% {
+    left: -20vw;
+  }
+  100% {
+    left: 8vw;
   }
 }
 
-@media only screen and (max-width: 870px) {
+.github {
+  width: 130px;
+  position: absolute;
+  animation: entra6 5s;
+  left: 25vw;
+  top: 23%;
+}
+@keyframes entra6 {
+  0% {
+    left: -50vw;
+  }
+  50% {
+    left: -10vw;
+  }
+  100% {
+    left: 25vw;
+  }
+}
+
+.bootstrap {
+  width: 150px;
+  position: absolute;
+  animation: entra7 10s;
+  left: 42vw;
+  top: 23%;
+}
+@keyframes entra7 {
+  0% {
+    left: -70vw;
+  }
+  50% {
+    left: -20vw;
+  }
+  100% {
+    left: 42vw;
+  }
+}
+
+.material {
+  width: 150px;
+  position: absolute;
+  animation: entra8 17s;
+  left: 60vw;
+  top: 23%;
+  border-radius: 10px;
+}
+@keyframes entra8 {
+  0% {
+    left: -50vw;
+  }
+  50% {
+    left: -20vw;
+  }
+  100% {
+    left: 60vw;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
   .grid-container {
     margin: 0;
   }
-  .subTitulo {
-    font-size: 20px;
-  }
-  .sobreMi {
-    line-height: 25px;
-  }
 
-  .html, .css, .js, .angular {
+  .html, .css, .js, .angular, .git, .github, .bootstrap, .material {
     width: 100px;
   }
+
 }
 
-@media only screen and (max-width: 620px) {
-  .sobreMi {
-    line-height: 22px;
-    font-size: 16px;
+@media only screen and (max-width: 750px) {
+  .angular {
+    animation: entra4 17s;
+    left: 15vw;
+    top: 40%;
   }
-  .html {
-    animation: entrar1 2s;
-    left: 10vw;
-    margin-top: 1%;
-  }
-  @keyframes entrar1 {
-    0% {
-      left: -50vw;
-    }
-    50% {
-      left: -10vw;
-    }
-    100% {
-      left: 10vw;
-    }
-  }
-  .css {
-    animation: entrar2 5s;
-    left: 45vw;
-    margin-top: 1%;
-  }
-  @keyframes entrar2 {
+  @keyframes entra4 {
     0% {
       left: -50vw;
     }
@@ -169,21 +203,79 @@ mat-card-title {
       left: -20vw;
     }
     100% {
-      left: 45vw;
+      left: 15vw;
     }
   }
-  
-  .js {
-    animation: entrar3 12s;
-    left: 10vw;
-    margin-top: 35%;
+
+  .material {
+    animation: entra8 17s;
+    left: 35vw;
+    top: 40%;
+    border-radius: 10px;
   }
-  @keyframes entrar3 {
+  @keyframes entra8 {
+    0% {
+      left: -50vw;
+    }
+    50% {
+      left: -20vw;
+    }
+    100% {
+      left: 35vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  h3 {
+    font-size: 20px;
+  }
+  .html {
+    animation: entra1 2s;
+    left: 10vw;
+    top: 6%;
+  }
+  @keyframes entra1 {
+    0% {
+      left: -50vw;
+    }
+    50% {
+      left: -10vw;
+    }
+    100% {
+      left: 5vw;
+    }
+  }
+  .css {
+    animation: entra2 7s;
+    left: 45vw;
+    top: 6%;
+    margin: 0;
+  }
+  @keyframes entra2 {
     0% {
       left: -70vw;
     }
     50% {
       left: -30vw;
+    }
+    100% {
+      left: 45vw;
+    }
+  }
+  
+  .js {
+    animation: entra3 2s;
+    left: 10vw;
+    top: 20%;
+    border-radius: 10px;
+  }
+  @keyframes entra3 {
+    0% {
+      left: -70vw;
+    }
+    50% {
+      left: -20vw;
     }
     100% {
       left: 10vw;
@@ -191,11 +283,11 @@ mat-card-title {
   }
   
   .angular {
-    animation: entrar4 17s;
+    animation: entra4 7s;
     left: 45vw;
-    margin-top: 35%;
+    top: 20%;
   }
-  @keyframes entrar4 {
+  @keyframes entra4 {
     0% {
       left: -70vw;
     }
@@ -206,4 +298,74 @@ mat-card-title {
       left: 45vw;
     }
   }
+  
+  .git {
+    animation: entra5 2s;
+    left: 10vw;
+    top: 39%;
+  }
+  @keyframes entra5 {
+    0% {
+      left: -70vw;
+    }
+    50% {
+      left: -20vw;
+    }
+    100% {
+      left: 10vw;
+    }
+  }
+  
+  .github {
+    animation: entra6 7s;
+    left: 45vw;
+    top: 37%;
+  }
+  @keyframes entra6 {
+    0% {
+      left: -70vw;
+    }
+    50% {
+      left: -30vw;
+    }
+    100% {
+      left: 45vw;
+    }
+  }
+  
+  .bootstrap {
+    animation: entra7 2s;
+    left: 10vw;
+    top: 52%;
+  }
+  @keyframes entra7 {
+    0% {
+      left: -70vw;
+    }
+    50% {
+      left: -20vw;
+    }
+    100% {
+      left: 10vw;
+    }
+  }
+  
+  .material {
+    animation: entra8 7s;
+    left: 45vw;
+    top: 53%;
+    border-radius: 10px;
+  }
+  @keyframes entra8 {
+    0% {
+      left: -70vw;
+    }
+    50% {
+      left: -30vw;
+    }
+    100% {
+      left: 45vw;
+    }
+  }
+  
 }
